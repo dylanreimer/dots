@@ -1,0 +1,1 @@
+for f in ./*/* ; do mv -n "$f" ./"$(date -r "$f" +"%Y-%m")"_"$(basename "$f")" ; done
