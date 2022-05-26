@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 
-MIND="/Users/dylanreimer/mind"
+MIND="$HOME/mind"
 
 cd "$MIND"
 

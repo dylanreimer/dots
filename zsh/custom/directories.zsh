@@ -13,8 +13,8 @@ function changeCodeContext() {
 # ----------------------
 # cd shortcuts
 # ----------------------
-alias chromeprof="cd /Users/dylanreimer/Library/Application\ Support/Google/Chrome/Default"
+alias chromeprof="cd $HOME/Library/Application\ Support/Google/Chrome/Default"
 alias chromeexec="cd /Applications/Google\ Chrome.app/Contents/MacOS"
 alias dev="cd ~/dev"
-alias omzrc="cd ~/.oh-my-zsh/custom"
+alias omzrc="cd $HOME/.dots/zsh/custom"
 alias scripts="cd ~/bin"
