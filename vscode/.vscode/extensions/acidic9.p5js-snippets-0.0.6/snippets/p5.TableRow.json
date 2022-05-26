@@ -1,0 +1,44 @@
+{
+	"get": {
+		"body": [
+			"get(${1:column})"
+		],
+		"description": "Retrieves a value from the TableRow's specified column. The column may be specified by either its ID or title.",
+		"prefix": "get"
+	},
+	"getNum": {
+		"body": [
+			"getNum(${1:column})"
+		],
+		"description": "Retrieves a Float value from the TableRow's specified column. The column may be specified by either its ID or title.",
+		"prefix": "getNum"
+	},
+	"getString": {
+		"body": [
+			"getString(${1:column})"
+		],
+		"description": "Retrieves an String value from the TableRow's specified column. The column may be specified by either its ID or title.",
+		"prefix": "getString"
+	},
+	"set": {
+		"body": [
+			"set(${1:column}, ${2:value})"
+		],
+		"description": "Stores a value in the TableRow's specified column. The column may be specified by either its ID or title.",
+		"prefix": "set"
+	},
+	"setNum": {
+		"body": [
+			"setNum(${1:column}, ${2:value})"
+		],
+		"description": "Stores a Float value in the TableRow's specified column. The column may be specified by either its ID or title.",
+		"prefix": "setNum"
+	},
+	"setString": {
+		"body": [
+			"setString(${1:column}, ${2:value})"
+		],
+		"description": "Stores a String value in the TableRow's specified column. The column may be specified by either its ID or title.",
+		"prefix": "setString"
+	}
+}

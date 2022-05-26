@@ -1,0 +1,191 @@
+{
+	"add": {
+		"body": [
+			"add(${1:x}, ${2:[y]}, ${3:[z]})"
+		],
+		"description": "Adds x, y, and z components to a vector, adds one vector to another, or adds two independent vectors together. The version of the method that adds two vectors together is a static method and returns a p5.Vector, the others acts directly on the vector. See the examples for more context.",
+		"prefix": "add"
+	},
+	"angleBetween": {
+		"body": [
+			"angleBetween(${1:v1}, ${2:v2})"
+		],
+		"description": "Calculates and returns the angle (in radians) between two vectors.",
+		"prefix": "angleBetween"
+	},
+	"array": {
+		"body": [
+			"array()"
+		],
+		"description": "Return a representation of this vector as a float array. This is only for temporary use. If used in any other fashion, the contents should be copied by using the p5.Vector.copy() method to copy into your own array.",
+		"prefix": "array"
+	},
+	"copy": {
+		"body": [
+			"copy()"
+		],
+		"description": "Gets a copy of the vector, returns a p5.Vector object.",
+		"prefix": "copy"
+	},
+	"cross": {
+		"body": [
+			"cross(${1:v})"
+		],
+		"description": "Calculates and returns a vector composed of the cross product between two vectors. Both the static and non static methods return a new p5.Vector. See the examples for more context.",
+		"prefix": "cross"
+	},
+	"dist": {
+		"body": [
+			"dist(${1:v})"
+		],
+		"description": "Calculates the Euclidean distance between two points (considering a point as a vector object).",
+		"prefix": "dist"
+	},
+	"div": {
+		"body": [
+			"div(${1:n})"
+		],
+		"description": "Divide the vector by a scalar. The static version of this method creates a new p5.Vector while the non static version acts on the vector directly. See the examples for more context.",
+		"prefix": "div"
+	},
+	"dot": {
+		"body": [
+			"dot(${1:x}, ${2:[y]}, ${3:[z]})"
+		],
+		"description": "Calculates the dot product of two vectors. The version of the method that computes the dot product of two independent vectors is a static method. See the examples for more context.",
+		"prefix": "dot"
+	},
+	"equals": {
+		"body": [
+			"equals(${1:[x]}, ${2:[y]}, ${3:[z]})"
+		],
+		"description": "Equality check against a p5.Vector",
+		"prefix": "equals"
+	},
+	"fromAngle": {
+		"body": [
+			"fromAngle(${1:angle})"
+		],
+		"description": "Make a new 2D unit vector from an angle",
+		"prefix": "fromAngle"
+	},
+	"heading": {
+		"body": [
+			"heading()"
+		],
+		"description": "Calculate the angle of rotation for this vector (only 2D vectors)",
+		"prefix": "heading"
+	},
+	"lerp": {
+		"body": [
+			"lerp(${1:x}, ${2:[y]}, ${3:[z]}, ${4:amt})"
+		],
+		"description": "Linear interpolate the vector to another vector",
+		"prefix": "lerp"
+	},
+	"limit": {
+		"body": [
+			"limit(${1:max})"
+		],
+		"description": "Limit the magnitude of this vector to the value used for the max parameter.",
+		"prefix": "limit"
+	},
+	"mag": {
+		"body": [
+			"mag()"
+		],
+		"description": "Calculates the magnitude (length) of the vector and returns the result as a float (this is simply the equation sqrt(xx + yy + z*z).)",
+		"prefix": "mag"
+	},
+	"magSq": {
+		"body": [
+			"magSq()"
+		],
+		"description": "Calculates the squared magnitude of the vector and returns the result as a float (this is simply the equation (xx + yy + z*z).) Faster if the real length is not required in the case of comparing vectors, etc.",
+		"prefix": "magSq"
+	},
+	"mult": {
+		"body": [
+			"mult(${1:n})"
+		],
+		"description": "Multiply the vector by a scalar. The static version of this method creates a new p5.Vector while the non static version acts on the vector directly. See the examples for more context.",
+		"prefix": "mult"
+	},
+	"normalize": {
+		"body": [
+			"normalize()"
+		],
+		"description": "Normalize the vector to length 1 (make it a unit vector).",
+		"prefix": "normalize"
+	},
+	"random2D": {
+		"body": [
+			"random2D()"
+		],
+		"description": "Make a new 2D unit vector from a random angle",
+		"prefix": "random2D"
+	},
+	"random3D": {
+		"body": [
+			"random3D()"
+		],
+		"description": "Make a new random 3D unit vector.",
+		"prefix": "random3D"
+	},
+	"rotate": {
+		"body": [
+			"rotate(${1:angle})"
+		],
+		"description": "Rotate the vector by an angle (only 2D vectors), magnitude remains the same",
+		"prefix": "rotate"
+	},
+	"set": {
+		"body": [
+			"set(${1:[x]}, ${2:[y]}, ${3:[z]})"
+		],
+		"description": "Sets the x, y, and z component of the vector using two or three separate variables, the data from a p5.Vector, or the values from a float array.",
+		"prefix": "set"
+	},
+	"setMag": {
+		"body": [
+			"setMag(${1:len})"
+		],
+		"description": "Set the magnitude of this vector to the value used for the len parameter.",
+		"prefix": "setMag"
+	},
+	"sub": {
+		"body": [
+			"sub(${1:x}, ${2:[y]}, ${3:[z]})"
+		],
+		"description": "Subtracts x, y, and z components from a vector, subtracts one vector from another, or subtracts two independent vectors. The version of the method that subtracts two vectors is a static method and returns a p5.Vector, the other acts directly on the vector. See the examples for more context.",
+		"prefix": "sub"
+	},
+	"toString": {
+		"body": [
+			"toString()"
+		],
+		"description": "Returns a string representation of a vector v by calling String(v) or v.toString(). This method is useful for logging vectors in the console.",
+		"prefix": "toString"
+	},
+	"x": {
+		"body": [
+			"x"
+		],
+		"description": "The x component of the vector",
+		"prefix": "x"
+	},
+	"y": {
+		"body": [
+			"y"
+		],
+		"description": "The y component of the vector",
+		"prefix": "y"
+	},
+	"z": {
+		"body": [
+			"z"
+		],
+		"description": "The z component of the vector",
+		"prefix": "z"
+	}
+}

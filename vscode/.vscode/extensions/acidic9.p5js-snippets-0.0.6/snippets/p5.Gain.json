@@ -1,0 +1,30 @@
+{
+	"amp": {
+		"body": [
+			"amp(${1:volume}, ${2:[rampTime]}, ${3:[timeFromNow]})"
+		],
+		"description": "Set the output level of the gain node.",
+		"prefix": "amp"
+	},
+	"connect": {
+		"body": [
+			"connect(${1:unit})"
+		],
+		"description": "Send output to a p5.sound or web audio object",
+		"prefix": "connect"
+	},
+	"disconnect": {
+		"body": [
+			"disconnect()"
+		],
+		"description": "Disconnect all output.",
+		"prefix": "disconnect"
+	},
+	"setInput": {
+		"body": [
+			"setInput(${1:src})"
+		],
+		"description": "Connect a source to the gain node.",
+		"prefix": "setInput"
+	}
+}

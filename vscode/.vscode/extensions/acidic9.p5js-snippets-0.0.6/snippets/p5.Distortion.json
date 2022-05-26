@@ -1,0 +1,37 @@
+{
+	"WaveShaperNode": {
+		"body": [
+			"WaveShaperNode"
+		],
+		"description": "The p5.Distortion is built with a  Web Audio WaveShaper Node.",
+		"prefix": "WaveShaperNode"
+	},
+	"connect": {
+		"body": [
+			"connect(${1:unit})"
+		],
+		"description": "Send output to a p5.sound or web audio object",
+		"prefix": "connect"
+	},
+	"disconnect": {
+		"body": [
+			"disconnect()"
+		],
+		"description": "Disconnect all output.",
+		"prefix": "disconnect"
+	},
+	"getAmount": {
+		"body": [
+			"getAmount()"
+		],
+		"description": "Return the distortion amount, typically between 0-1.",
+		"prefix": "getAmount"
+	},
+	"setType": {
+		"body": [
+			"setType(${1:[amount]}, ${2:[oversample]}, ${3:arg})"
+		],
+		"description": "Set the amount and oversample of the waveshaper distortion.",
+		"prefix": "setType"
+	}
+}

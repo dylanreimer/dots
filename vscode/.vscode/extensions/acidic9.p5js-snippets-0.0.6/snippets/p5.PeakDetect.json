@@ -1,0 +1,23 @@
+{
+	"isDetected": {
+		"body": [
+			"isDetected"
+		],
+		"description": "isDetected is set to true when a peak is detected.",
+		"prefix": "isDetected"
+	},
+	"onPeak": {
+		"body": [
+			"onPeak(${1:callback}, ${2:[val]})"
+		],
+		"description": "onPeak accepts two arguments: a function to call when a peak is detected. The value of the peak, between 0.0 and 1.0, is passed to the callback.",
+		"prefix": "onPeak"
+	},
+	"update": {
+		"body": [
+			"update(${1:fftObject})"
+		],
+		"description": "The update method is run in the draw loop. Accepts an FFT object. You must call .analyze() on the FFT object prior to updating the peakDetect because it relies on a completed FFT analysis.",
+		"prefix": "update"
+	}
+}

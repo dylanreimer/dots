@@ -1,0 +1,30 @@
+{
+	"add": {
+		"body": [
+			"add(${1:number})"
+		],
+		"description": "Add a constant value to this audio signal, and return the resulting audio signal. Does not change the value of the original signal, instead it returns a new p5.SignalAdd.",
+		"prefix": "add"
+	},
+	"fade": {
+		"body": [
+			"fade(${1:value}, ${2:secondsFromNow})"
+		],
+		"description": "Fade to value, for smooth transitions",
+		"prefix": "fade"
+	},
+	"mult": {
+		"body": [
+			"mult(${1:number})"
+		],
+		"description": "Multiply this signal by a constant value, and return the resulting audio signal. Does not change the value of the original signal, instead it returns a new p5.SignalMult.",
+		"prefix": "mult"
+	},
+	"scale": {
+		"body": [
+			"scale(${1:number}, ${2:inMin}, ${3:inMax}, ${4:outMin}, ${5:outMax})"
+		],
+		"description": "Scale this signal value to a given range, and return the result as an audio signal. Does not change the value of the original signal, instead it returns a new p5.SignalScale.",
+		"prefix": "scale"
+	}
+}

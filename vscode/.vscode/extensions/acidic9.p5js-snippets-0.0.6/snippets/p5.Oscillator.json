@@ -1,0 +1,114 @@
+{
+	"add": {
+		"body": [
+			"add(${1:number})"
+		],
+		"description": "Add a value to the p5.Oscillator's output amplitude, and return the oscillator. Calling this method again will override the initial add() with a new value.",
+		"prefix": "add"
+	},
+	"amp": {
+		"body": [
+			"amp(${1:vol}, ${2:[rampTime]}, ${3:[timeFromNow]})"
+		],
+		"description": "Set the amplitude between 0 and 1.0. Or, pass in an object such as an oscillator to modulate amplitude with an audio signal.",
+		"prefix": "amp"
+	},
+	"connect": {
+		"body": [
+			"connect(${1:unit})"
+		],
+		"description": "Connect to a p5.sound / Web Audio object.",
+		"prefix": "connect"
+	},
+	"disconnect": {
+		"body": [
+			"disconnect()"
+		],
+		"description": "Disconnect all outputs",
+		"prefix": "disconnect"
+	},
+	"freq": {
+		"body": [
+			"freq(${1:Frequency}, ${2:[rampTime]}, ${3:[timeFromNow]})"
+		],
+		"description": "Set frequency of an oscillator to a value. Or, pass in an object such as an oscillator to modulate the frequency with an audio signal.",
+		"prefix": "freq"
+	},
+	"mult": {
+		"body": [
+			"mult(${1:number})"
+		],
+		"description": "Multiply the p5.Oscillator's output amplitude by a fixed value (i.e. turn it up!). Calling this method again will override the initial mult() with a new value.",
+		"prefix": "mult"
+	},
+	"p5.SawOsc": {
+		"body": [
+			"p5.SawOsc(${1:freq})"
+		],
+		"description": "Constructor: new p5.SawOsc(). This creates a SawTooth Wave Oscillator and is equivalent to  new p5.Oscillator('sawtooth')  or creating a p5.Oscillator and then calling its method setType('sawtooth'). See p5.Oscillator for methods.",
+		"prefix": "p5.SawOsc"
+	},
+	"p5.SinOsc": {
+		"body": [
+			"p5.SinOsc(${1:freq})"
+		],
+		"description": "Constructor: new p5.SinOsc(). This creates a Sine Wave Oscillator and is equivalent to  new p5.Oscillator('sine')  or creating a p5.Oscillator and then calling its method setType('sine'). See p5.Oscillator for methods.",
+		"prefix": "p5.SinOsc"
+	},
+	"p5.SqrOsc": {
+		"body": [
+			"p5.SqrOsc(${1:freq})"
+		],
+		"description": "Constructor: new p5.SqrOsc(). This creates a Square Wave Oscillator and is equivalent to  new p5.Oscillator('square')  or creating a p5.Oscillator and then calling its method setType('square'). See p5.Oscillator for methods.",
+		"prefix": "p5.SqrOsc"
+	},
+	"p5.TriOsc": {
+		"body": [
+			"p5.TriOsc(${1:freq})"
+		],
+		"description": "Constructor: new p5.TriOsc(). This creates a Triangle Wave Oscillator and is equivalent to new p5.Oscillator('triangle')  or creating a p5.Oscillator and then calling its method setType('triangle'). See p5.Oscillator for methods.",
+		"prefix": "p5.TriOsc"
+	},
+	"pan": {
+		"body": [
+			"pan(${1:panning}, ${2:timeFromNow})"
+		],
+		"description": "Pan between Left (-1) and Right (1)",
+		"prefix": "pan"
+	},
+	"phase": {
+		"body": [
+			"phase(${1:phase})"
+		],
+		"description": "Set the phase of an oscillator between 0.0 and 1.0. In this implementation, phase is a delay time based on the oscillator's current frequency.",
+		"prefix": "phase"
+	},
+	"scale": {
+		"body": [
+			"scale(${1:inMin}, ${2:inMax}, ${3:outMin}, ${4:outMax})"
+		],
+		"description": "Scale this oscillator's amplitude values to a given range, and return the oscillator. Calling this method again will override the initial scale() with new values.",
+		"prefix": "scale"
+	},
+	"setType": {
+		"body": [
+			"setType(${1:type})"
+		],
+		"description": "Set type to 'sine', 'triangle', 'sawtooth' or 'square'.",
+		"prefix": "setType"
+	},
+	"start": {
+		"body": [
+			"start(${1:[time]}, ${2:[frequency]})"
+		],
+		"description": "Start an oscillator. Accepts an optional parameter to determine how long (in seconds from now) until the oscillator starts.",
+		"prefix": "start"
+	},
+	"stop": {
+		"body": [
+			"stop(${1:secondsFromNow})"
+		],
+		"description": "Stop an oscillator. Accepts an optional parameter to determine how long (in seconds from now) until the oscillator stops.",
+		"prefix": "stop"
+	}
+}

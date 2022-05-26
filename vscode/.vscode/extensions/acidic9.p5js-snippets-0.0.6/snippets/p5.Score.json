@@ -1,0 +1,37 @@
+{
+	"loop": {
+		"body": [
+			"loop()"
+		],
+		"description": "Loop playback of the score.",
+		"prefix": "loop"
+	},
+	"noLoop": {
+		"body": [
+			"noLoop()"
+		],
+		"description": "Stop looping playback of the score. If it is currently playing, this will go into effect after the current round of playback completes.",
+		"prefix": "noLoop"
+	},
+	"pause": {
+		"body": [
+			"pause()"
+		],
+		"description": "Pause playback of the score.",
+		"prefix": "pause"
+	},
+	"start": {
+		"body": [
+			"start()"
+		],
+		"description": "Start playback of the score.",
+		"prefix": "start"
+	},
+	"stop": {
+		"body": [
+			"stop()"
+		],
+		"description": "Stop playback of the score.",
+		"prefix": "stop"
+	}
+}

@@ -1,0 +1,86 @@
+{
+	"amp": {
+		"body": [
+			"amp(${1:volume}, ${2:[rampTime]}, ${3:[timeFromNow]})"
+		],
+		"description": "Set the output level of the filter.",
+		"prefix": "amp"
+	},
+	"biquadFilter": {
+		"body": [
+			"biquadFilter"
+		],
+		"description": "The p5.Filter is built with a  Web Audio BiquadFilter Node.",
+		"prefix": "biquadFilter"
+	},
+	"connect": {
+		"body": [
+			"connect(${1:unit})"
+		],
+		"description": "Send output to a p5.sound or web audio object",
+		"prefix": "connect"
+	},
+	"disconnect": {
+		"body": [
+			"disconnect()"
+		],
+		"description": "Disconnect all output.",
+		"prefix": "disconnect"
+	},
+	"freq": {
+		"body": [
+			"freq(${1:freq}, ${2:[timeFromNow]})"
+		],
+		"description": "Set the filter frequency, in Hz, from 10 to 22050 (the range of human hearing, although in reality most people hear in a narrower range).",
+		"prefix": "freq"
+	},
+	"p5.BandPass": {
+		"body": [
+			"p5.BandPass()"
+		],
+		"description": "Constructor: new p5.BandPass() Filter. This is the same as creating a p5.Filter and then calling its method setType('bandpass'). See p5.Filter for methods.",
+		"prefix": "p5.BandPass"
+	},
+	"p5.HighPass": {
+		"body": [
+			"p5.HighPass()"
+		],
+		"description": "Constructor: new p5.HighPass() Filter. This is the same as creating a p5.Filter and then calling its method setType('highpass'). See p5.Filter for methods.",
+		"prefix": "p5.HighPass"
+	},
+	"p5.LowPass": {
+		"body": [
+			"p5.LowPass()"
+		],
+		"description": "Constructor: new p5.LowPass() Filter. This is the same as creating a p5.Filter and then calling its method setType('lowpass'). See p5.Filter for methods.",
+		"prefix": "p5.LowPass"
+	},
+	"process": {
+		"body": [
+			"process(${1:Signal}, ${2:freq}, ${3:res})"
+		],
+		"description": "Filter an audio signal according to a set of filter parameters.",
+		"prefix": "process"
+	},
+	"res": {
+		"body": [
+			"res(${1:res}, ${2:[timeFromNow]})"
+		],
+		"description": "Controls either width of a bandpass frequency, or the resonance of a low/highpass cutoff frequency.",
+		"prefix": "res"
+	},
+	"set": {
+		"body": [
+			"set(${1:freq}, ${2:res}, ${3:[timeFromNow]})"
+		],
+		"description": "Set the frequency and the resonance of the filter.",
+		"prefix": "set"
+	},
+	"setType": {
+		"body": [
+			"setType(${1:arg})"
+		],
+		"description": "Set the type of a p5.Filter. Possible types include:  \"lowpass\" (default), \"highpass\", \"bandpass\",  \"lowshelf\", \"highshelf\", \"peaking\", \"notch\", \"allpass\".",
+		"prefix": "setType"
+	}
+}
