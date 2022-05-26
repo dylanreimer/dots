@@ -4,7 +4,7 @@
 
 # -----------------------------------
 
-DIR=$(dirname $0)
+DIR="$PWD"
 cd "$(dirname $0)"/..
 DOTS=$(pwd -P)
 
