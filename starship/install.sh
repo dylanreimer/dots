@@ -1,9 +1,12 @@
 #!/usr/bin/env bash
 #
-# installs things.
+# installs zsh things
 
-cd "$(dirname "$0")/.."
-DOTFILES_ROOT=$(pwd -P)
+# -----------------------------------
+
+DIR="$PWD"
+cd "$(dirname $0)"/..
+DOTS=$(pwd -P)
 
 set -e
 
@@ -26,29 +29,6 @@ fail () {
   echo ''
   exit
 }
-
-setup_gitconfig () {
-  if ! [ -f git/gitconfig.local.symlink ]
-  then
-    info 'setup gitconfig'
-
-    git_credential='cache'
-    if [ "$(uname -s)" == "Darwin" ]
-    then
-      git_credential='osxkeychain'
-    fi
-
-    user ' - What is your github author name?'
-    read -e git_authorname
-    user ' - What is your github author email?'
-    read -e git_authoremail
-
-    sed -e "s/AUTHORNAME/$git_authorname/g" -e "s/AUTHOREMAIL/$git_authoremail/g" -e "s/GIT_CREDENTIAL_HELPER/$git_credential/g" git/gitconfig.local.symlink.example > git/gitconfig.local.symlink
-
-    success 'gitconfig'
-  fi
-}
-
 
 link_file () {
   local src=$1 dst=$2
@@ -125,33 +105,20 @@ link_file () {
   fi
 }
 
-install_dotfiles () {
-  info 'installing dotfiles'
+# -----------------------------------
 
-  local overwrite_all=false backup_all=false skip_all=false
+# info 'installing oh-my-zsh'
 
-  for src in $(find -H "$DOTFILES_ROOT" -maxdepth 2 -name '*.symlink' -not -path '*.git*')
-  do
-    dst="$HOME/.$(basename "${src%.*}")"
-    link_file "$src" "$dst"
-  done
+# sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" # install oh-my-zsh
+
+linker () {
+  info 'linking'
+
+  local overwrite_all=false backup_all=true skip_all=false
+  
+  link_file "$DIR/starship.toml" "$HOME/.config/starship.toml"
 }
 
-setup_gitconfig
-install_dotfiles
-
-# If we're on a Mac, let's install and setup homebrew.
-if [ "$(uname -s)" == "Darwin" ]
-then
-  info "installing dependencies"
-  if source bin/dot | while read -r data; do info "$data"; done
-  then
-    success "dependencies installed"
-  else
-    fail "error installing dependencies"
-  fi
-fi
-
+linker
 echo ''
 echo '  All installed!'
-

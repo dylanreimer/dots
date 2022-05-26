@@ -107,13 +107,19 @@ link_file () {
 
 # -----------------------------------
 
-info 'writing'
+# info 'installing oh-my-zsh'
 
-# Specify the preferences directory
-defaults write com.googlecode.iterm2 PrefsCustomFolder -string "~/.dots/System/OSX/iTerm/settings"
+# sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" # install oh-my-zsh
 
-# Tell iTerm2 to use the custom preferences in the directory
-defaults write com.googlecode.iterm2 LoadPrefsFromCustomFolder -bool true
+linker () {
+  info 'linking'
 
+  local overwrite_all=false backup_all=true skip_all=false
+  
+  link_file "$DIR/.vimrc" "$HOME/.vimrc"
+  link_file "$DIR/.vim/" "$HOME"
+}
+
+linker
 echo ''
 echo '  All installed!'
