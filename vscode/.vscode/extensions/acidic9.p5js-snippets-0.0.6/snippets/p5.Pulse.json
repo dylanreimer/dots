@@ -1,9 +1,0 @@
-{
-	"width": {
-		"body": [
-			"width(${1:[width]})"
-		],
-		"description": "Set the width of a Pulse object (an oscillator that implements Pulse Width Modulation).",
-		"prefix": "width"
-	}
-}

@@ -20,7 +20,7 @@ ENABLE_CORRECTION="false"
 unsetopt AUTO_CD
 
 # Would you like to use another custom folder than $ZSH/custom?
-ZSH_CUSTOM=$HOME/.dots/custom
+ZSH_CUSTOM=$HOME/.dots/zsh/custom
 
 source $ZSH/oh-my-zsh.sh
 

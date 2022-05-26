@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 #
 # Homebrew
 #
@@ -22,3 +22,7 @@ then
 fi
 
 exit 0
+
+
+
+
