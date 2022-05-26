@@ -111,12 +111,21 @@ info 'installing oh-my-zsh'
 
 # sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" # install oh-my-zsh
 
-info 'installing dotfiles'
+linker () {
+  info 'linking'
 
-local overwrite_all=false backup_all=true skip_all=false
+  local overwrite_all=false backup_all=true skip_all=false
 
-link_file "$DIR/.zshrc" "$HOME/.zshrc"
-link_file "$DIR/.zprofile" "$HOME/.zprofile"
+  # for src in $(find -H "$DOTFILES_ROOT" -maxdepth 2 -name '*.symlink' -not -path '*.git*')
+  # do
+    # dst="$HOME/.$(basename "${src%.*}")"
+    # link_file "$src" "$dst"
+  # done
+  
+  link_file "$DIR/.zshrc" "$HOME/.zshrc"
+  link_file "$DIR/.zprofile" "$HOME/.zprofile"
+}
 
+linker
 echo ''
 echo '  All installed!'
