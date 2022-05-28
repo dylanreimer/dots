@@ -117,7 +117,7 @@ linker () {
   local overwrite_all=false backup_all=true skip_all=false
   
   link_file "$DIR/.vimrc" "$HOME/.vimrc"
-  link_file "$DIR/.vim/" "$HOME"
+  link_file "$DIR/.vim" "$HOME/.vim"
 }
 
 linker

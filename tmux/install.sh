@@ -117,7 +117,7 @@ linker () {
   local overwrite_all=false backup_all=true skip_all=false
   
   link_file "$DIR/.tmux.conf" "$HOME/.tmux.conf"
-  link_file "$DIR/.tmux/" "$HOME"
+  link_file "$DIR/.tmux" "$HOME/.tmux"
 }
 
 linker
