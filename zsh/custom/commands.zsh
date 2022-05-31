@@ -10,7 +10,7 @@ alias start='npm start'
 alias nr='npm run'
 alias run='npm run'
 alias nis='npm i -S'
-alias l="ls" # List files in current directory
+alias l="ls -AF" # List files, sorted and full
 alias ll="ls -al" # List all files in current directory in long list format
 alias o="open ." # Open the current directory in Finder
 alias b="cd .." #go back a directory
@@ -39,6 +39,8 @@ alias gs='echo ""; echo "*********************************************"; echo -e
 function cd {
     builtin cd "$@" && ls -FA
 }
+
+function
 
 alias ssh151="ssh -t -X eecs151-aap@eda-7.eecs.berkeley.edu 'exec zsh -l' "
 alias ssh161="ssh cs161-asj@hive25.cs.berkeley.edu"

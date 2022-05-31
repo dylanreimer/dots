@@ -1,6 +1,6 @@
 [user]
 	name = Dylan Reimer
-	email = dyr@amazon.com
+	email = dylanreimer@berkeley.edu
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
@@ -9,6 +9,6 @@
 [push]
 	default = simple
 [credential]
-	username = dyr
+	username = dylanreimer
 [init]
 	defaultBranch = main
