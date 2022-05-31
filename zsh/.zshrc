@@ -85,3 +85,5 @@ npm() {
 # else
 #     compinit -C
 # fi
+
+export PATH=$HOME/.toolbox/bin:$PATH

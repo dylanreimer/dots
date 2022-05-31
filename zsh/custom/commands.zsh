@@ -46,3 +46,6 @@ alias sshwsl="ssh -t dreim@192.168.86.22 'wsl ~' "
 alias chrome='f(){ /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --flag-switches-begin "$@" --flag-switches-end; unset -f f; }; f'
 alias res='omz reload'
 alias speed="/usr/bin/time zsh -i -c exit"
+alias third-party-promote="~/.toolbox/bin/brazil-third-party-tool promote"
+alias third-party="~/.toolbox/bin/brazil-third-party-tool"
+alias auth="mwinit -o"
