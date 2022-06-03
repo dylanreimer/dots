@@ -108,7 +108,7 @@
     "security.workspace.trust.untrustedFiles": "open",
     "window.titleBarStyle": "native",
     "customizeUI.titleBar": "inline",
-    "customizeUI.activityBar": "bottom",
+    "customizeUI.activityBar": "regular",
     "[css]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
@@ -118,7 +118,12 @@
         ".title-actions" : "display: none",
         ".title:hover .title-actions" : "display: flex"
     },
-    "customizeUI.activityBarHideSettings": true
+    "customizeUI.activityBarHideSettings": true,
+    "terminal.integrated.fontFamily": "Fira Code",
+    "terminal.integrated.fontSize": 12,
+    "terminal.integrated.fontWeightBold": "600",
+    "terminal.integrated.unicodeVersion": "6",
+    
 
 
 }
