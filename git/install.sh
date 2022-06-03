@@ -30,7 +30,7 @@ fail () {
   exit
 }
 
-link_file () {
+cp_file () {
   local src=$1 dst=$2
 
   local overwrite= backup= skip=
@@ -100,8 +100,8 @@ link_file () {
 
   if [ "$skip" != "true" ]  # "false" or empty
   then
-    ln -s "$1" "$2"
-    success "linked $1 to $2"
+    cp "$1" "$2"
+    success "copied $1 to $2"
   fi
 }
 
@@ -111,14 +111,14 @@ link_file () {
 
 # sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" # install oh-my-zsh
 
-linker () {
-  info 'linking'
+copying () {
+  info 'copying gitconfig'
 
   local overwrite_all=false backup_all=true skip_all=false
   
-  link_file "$DIR/.gitconfig" "$HOME/.gitconfig"
+  cp_file "$DIR/.gitconfig" "$HOME/.gitconfig"
 }
 
-linker
+copying
 echo ''
 echo '  All installed!'
