@@ -40,7 +40,10 @@ function cd {
     builtin cd "$@" && ls -FA
 }
 
-function
+function t {
+    tree -aFC -I '.git' -L "${1:-2}"
+}
+alias tt="tree -aFC -I '.git'"
 
 alias ssh151="ssh -t -X eecs151-aap@eda-7.eecs.berkeley.edu 'exec zsh -l' "
 alias ssh161="ssh cs161-asj@hive25.cs.berkeley.edu"
