@@ -30,4 +30,10 @@ exit 0
 brew tap homebrew/cask-fonts
 brew install --cask font-hack-nerd-font
 
+# quick previews
+# https://github.com/sindresorhus/quick-look-plugins
+brew install qlcolorcode qlstephen qlmarkdown quicklook-json qlimagesize suspicious-package apparency quicklookase qlvideo
+
+# clipy
+brew install --cask clipy
 
