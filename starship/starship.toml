@@ -21,7 +21,7 @@ symbol = " "
 [hostname]
 ssh_only = true
 format =  "on [$hostname](bold red) "
-trim_at = ".companyname.com"
+trim_at = "."
 disabled = false
 
 [username]
