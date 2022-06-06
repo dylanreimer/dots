@@ -53,5 +53,5 @@ alias res='omz reload'
 alias speed="/usr/bin/time zsh -i -c exit"
 alias third-party-promote="~/.toolbox/bin/brazil-third-party-tool promote"
 alias third-party="~/.toolbox/bin/brazil-third-party-tool"
-alias auth="mwinit -o"
+alias auth="kinit && mwinit -o"
 alias bs="brazil ws show"
