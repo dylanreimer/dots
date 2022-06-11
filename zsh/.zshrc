@@ -58,19 +58,19 @@ nvm() {
     nvm "$@"
 }
  
-node() {
-    unset -f node
-    export NVM_DIR=~/.nvm
-    [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
-    node "$@"
-}
+#node() {
+#    unset -f node
+#    export NVM_DIR=~/.nvm
+#    [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+#    node "$@"
+#}
  
-npm() {
-    unset -f npm
-    export NVM_DIR=~/.nvm
-    [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
-    npm "$@"
-}
+#npm() {
+#    unset -f npm
+#    export NVM_DIR=~/.nvm
+#    [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+#    npm "$@"
+#}
 
 
 
@@ -87,3 +87,11 @@ npm() {
 # fi
 
 export PATH=$HOME/.toolbox/bin:$PATH
+export JAVA_HOME="/Library/Java/JavaVirtualMachines/amazon-corretto-17.jdk/Contents/Home"
+
+autoload bashcompinit && bashcompinit
+autoload -Uz compinit && compinit
+complete -C '/usr/local/bin/aws_completer' aws
+
+export PATH="/opt/homebrew/opt/node@12/bin:$PATH"
+export PATH="/opt/homebrew/opt/node@14/bin:$PATH"

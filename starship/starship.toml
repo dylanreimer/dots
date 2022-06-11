@@ -41,3 +41,7 @@ behind = "⇣${count}"
 
 [ruby]
 disabled = true
+
+[aws]
+disabled = true
+

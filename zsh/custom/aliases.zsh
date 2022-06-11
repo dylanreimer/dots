@@ -2,7 +2,6 @@
 # Aliases
 # -------
 alias 🍺="git checkout -b drunk"
-alias a='code .'
 alias c='code .'
 alias reveal-md="reveal-md --theme night --highlight-theme hybrid --port 1337"
 alias ns='npm start'
@@ -53,5 +52,23 @@ alias res='omz reload'
 alias speed="/usr/bin/time zsh -i -c exit"
 alias third-party-promote="~/.toolbox/bin/brazil-third-party-tool promote"
 alias third-party="~/.toolbox/bin/brazil-third-party-tool"
-alias auth="kinit && mwinit -o"
-alias bs="brazil ws show"
+alias auth="kinit -f && mwinit -o"
+
+
+################ Brazil Related Aliases ##################
+alias bb='brazil-build'
+alias bbr='brazil-recursive-cmd --allPackages brazil-build'
+alias bbc='brazil-build clean'
+
+######### Workspace operations #########
+alias bwv='brazil workspace --use --versionSet'
+alias bws='brazil ws show'
+alias bwp='brazil workspace --use --package'
+alias bwrp='brazil workspace --remove --package'
+alias p='package'
+alias rp='rpackage'
+
+# vpn
+alias vpn='vpn-onetouch'
+alias vpns='/opt/cisco/anyconnect/bin/vpn status'
+alias vpnd='/opt/cisco/anyconnect/bin/vpn disconnect'
