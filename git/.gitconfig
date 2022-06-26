@@ -14,3 +14,5 @@
 	# username = dylanreimer
 [init]
 	defaultBranch = main
+[safe]
+	directory = /Users/dyr/dev/partiql-lang-kotlin
