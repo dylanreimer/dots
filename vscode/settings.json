@@ -101,9 +101,6 @@
     "kite.showWelcomeNotificationOnStartup": false,
     "go.survey.prompt": false,
     "python.defaultInterpreterPath": "/usr/local/bin/python3",
-    "terminal.integrated.env.osx": {
-        "FIG_NEW_SESSION": "1"
-    },
     "editor.accessibilitySupport": "off",
     "security.workspace.trust.untrustedFiles": "open",
     "window.titleBarStyle": "native",
@@ -119,11 +116,53 @@
         ".title:hover .title-actions" : "display: flex"
     },
     "customizeUI.activityBarHideSettings": true,
-    "terminal.integrated.fontFamily": "Fira Code",
+    "terminal.integrated.fontFamily": "FiraCode Nerd Font Mono",
     "terminal.integrated.fontSize": 12,
-    "terminal.integrated.fontWeightBold": "600",
+    "terminal.integrated.fontWeightBold": "500",
     "terminal.integrated.unicodeVersion": "6",
-    
-
-
+    "terminal.integrated.letterSpacing": 0.10,
+    "telemetry.enableCrashReporter": false,
+    "telemetry.enableTelemetry": false,
+    "telemetry.telemetryLevel": "off",
+    "viceroy.config.lastVersion": "0.46.0",
+    "files.watcherExclude": {
+        "**/build/**": true,
+        "**/.git/objects/**": true,
+        "**/.git/subtree-cache/**": true,
+        "**/node_modules/*/**": true,
+        "**/.hg/store/**": true
+    },
+    "files.exclude": {
+        ".viceroy": true,
+        "apollo-overrides": true,
+        "release-info": true,
+        "src/*/build": false,
+        "build": false,
+        "env": true,
+        "packageInfo*": true,
+        ".bemol": true,
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/Thumbs.db": true
+    },
+    "search.exclude": {
+        "env": true,
+        "src/*/build": true,
+        "build": true,
+        "**/node_modules": true,
+        "**/bower_components": true,
+        "**/*.code-search": true
+    },
+    "[brazilPackageConfig]": {
+        "workbench.editor.languageDetection": false
+    },
+    "viceroy.doc.welcome.showAtStartup": false,
+    "viceroy.workspaceSyncStrategy": "automatic",
+    "viceroy.config.beautyMode": false,
+    "terminal.integrated.env.osx": {
+        "FIG_NEW_SESSION": "1"
+    },
 }
