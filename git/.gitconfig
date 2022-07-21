@@ -1,7 +1,7 @@
 [user]
 	name = Dylan Reimer
-	# email = dyr@amazon.com
-	# email = dylanreimer@berkeley.edu
+	email = dyr@amazon.com
+    # email = dylanreimer@berkeley.edu
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
