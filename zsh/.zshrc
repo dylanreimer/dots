@@ -70,5 +70,10 @@ autoload bashcompinit && bashcompinit
 autoload -Uz compinit && compinit
 complete -C '/usr/local/bin/aws_completer' aws
 
+alias python=python3
+alias pip=pip3
+export GOPATH="/Users/dylanreimer/go"
+export PATH="${GOPATH}/bin:$PATH"
+export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
 export PATH="/opt/homebrew/opt/node@12/bin:$PATH"
 export PATH="/opt/homebrew/opt/node@14/bin:$PATH"

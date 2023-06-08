@@ -1,6 +1,6 @@
 
 # Setting PATH for Python 3.7, original path in .bash_profile.pysave
-export PATH="/Library/Frameworks/Python.framework/Versions/3.7/bin:${PATH}"
+export PATH="/Library/Frameworks/Python.framework/Versions/3.8/bin:${PATH}"
 # user bin
 export PATH=$PATH:$HOME/bin
 
