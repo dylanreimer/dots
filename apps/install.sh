@@ -139,7 +139,8 @@ linker () {
 
   info 'linearmouse'
   brew install --cask linearmouse
-  link_file "$DIR/linearmouse/linearmouse.json" "$HOME/.config/linearmouse/linearmouse.json"
+  #link_file "$DIR/linearmouse/linearmouse.json" "$HOME/.config/linearmouse/linearmouse.json"
+  link_file "$DIR/linearmouse/com.lujjjh.LinearMouse.plist" "$HOME/Library/Preferences/com.lujjjh.LinearMouse.plist"
 
   info 'memorydiag'
 
