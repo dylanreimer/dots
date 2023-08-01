@@ -1,5 +1,7 @@
 # Don't print a new line at the start of the prompt
 add_newline = true
+command_timeout = 1000
+scan_timeout = 50
 
 # emojis=("🌿" "🍀" "🌱" "🍃" "🍂")
 # EMOJI=${emojis[$RANDOM % ${#emojis[@]} ]}
