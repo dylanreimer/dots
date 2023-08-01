@@ -112,6 +112,10 @@ link_file () {
 # sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" # install oh-my-zsh
 
 linker () {
+  
+  info 'installing starship prompt'
+  curl -sS https://starship.rs/install.sh | sh
+
   info 'linking'
 
   local overwrite_all=false backup_all=true skip_all=false

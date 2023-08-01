@@ -1,0 +1,5 @@
+# ignore zsh plugins
+zsh/custom/plugins/
+
+# ignore vim plugins
+

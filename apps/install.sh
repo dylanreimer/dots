@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #
-# installs zsh things
+# installs apps and their configs
 
 # -----------------------------------
 
@@ -107,25 +107,54 @@ link_file () {
 
 # -----------------------------------
 
-# info 'installing oh-my-zsh'
-
-# sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" # install oh-my-zsh
-
 linker () {
-  
-  info 'installing oh-my-zsh'
-  sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" # install oh-my-zsh
-  
-  info 'installing zsh plugins'
-  git clone https://github.com/zsh-users/zsh-syntax-highlighting.git "$DIR/custom/plugins/zsh-syntax-highlighting"
-  git clone https://github.com/zsh-users/zsh-autosuggestions "$DIR/custom/plugins/zsh-autosuggestions"
-
-  info 'linking'
 
   local overwrite_all=false backup_all=true skip_all=false
+
+  info 'vscode'
   
-  link_file "$DIR/.zshrc" "$HOME/.zshrc"
-  link_file "$DIR/.zprofile" "$HOME/.zprofile"
+  info 'iterm'
+  # brew install --cask iterm2
+
+  info 'intellij'
+
+  info 'soundsource'
+
+  info 'spotify'
+  # brew install --cask spotify
+
+  info '1password'
+  # brew install --cask 1password
+
+  info 'alfred'
+  brew install --cask alfred
+  link_file "$DIR/alfred/Alfred.alfredpreferences" "$HOME/Library/Application Support/Alfred/Alfred.alfredpreferences"
+
+  info 'alt-tab'
+  brew install --cask alt-tab
+  link_file "$DIR/alt-tab/com.lwouis.alt-tab-macos.plist" "$HOME/Library/Preferences/com.lwouis.alt-tab-macos.plist"
+
+  info 'istatmenus'
+  # brew install --cask istat-menus
+
+  info 'linearmouse'
+  brew install --cask linearmouse
+  link_file "$DIR/linearmouse/linearmouse.json" "$HOME/.config/linearmouse/linearmouse.json"
+
+  info 'memorydiag'
+
+  info 'menubarsplitter'
+  brew install --cask menu-bar-splitter
+
+  info 'rectangle'
+  brew install --cask rectangle
+  link_file "$DIR/rectangle/com.knollsoft.Rectangle.plist" "$HOME/Library/Preferences/com.knollsoft.Rectangle.plist"
+
+  info 'clipy'
+  brew install --cask clipy
+  #link_file "$DIR/clipy/default.realm" "$HOME/Library/Application Support/com.clipy-app.Clipy/default.realm"
+  link_file "$DIR/clipy/com.clipy-app.Clipy.plist" "$HOME/Library/Preferences/com.clipy-app.Clipy.plist"
+
 }
 
 linker
