@@ -144,8 +144,8 @@ linker () {
 
   info 'memorydiag'
 
-  info 'menubarsplitter'
-  #brew install --cask menu-bar-splitter
+  info 'bartender'
+  #brew install --cask bartender
 
   info 'rectangle'
   #brew install --cask rectangle
