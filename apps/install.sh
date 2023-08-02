@@ -127,34 +127,37 @@ linker () {
   # brew install --cask 1password
 
   info 'alfred'
-  brew install --cask alfred
-  link_file "$DIR/alfred/Alfred.alfredpreferences" "$HOME/Library/Application Support/Alfred/Alfred.alfredpreferences"
+  #brew install --cask alfred
+  #link_file "$DIR/alfred/Alfred.alfredpreferences" "$HOME/Library/Application Support/Alfred/Alfred.alfredpreferences"
 
   info 'alt-tab'
-  brew install --cask alt-tab
-  link_file "$DIR/alt-tab/com.lwouis.alt-tab-macos.plist" "$HOME/Library/Preferences/com.lwouis.alt-tab-macos.plist"
+  #brew install --cask alt-tab
+  #link_file "$DIR/alt-tab/com.lwouis.alt-tab-macos.plist" "$HOME/Library/Preferences/com.lwouis.alt-tab-macos.plist"
 
   info 'istatmenus'
   # brew install --cask istat-menus
 
   info 'linearmouse'
-  brew install --cask linearmouse
+  #brew install --cask linearmouse
   #link_file "$DIR/linearmouse/linearmouse.json" "$HOME/.config/linearmouse/linearmouse.json"
-  link_file "$DIR/linearmouse/com.lujjjh.LinearMouse.plist" "$HOME/Library/Preferences/com.lujjjh.LinearMouse.plist"
+  #link_file "$DIR/linearmouse/com.lujjjh.LinearMouse.plist" "$HOME/Library/Preferences/com.lujjjh.LinearMouse.plist"
 
   info 'memorydiag'
 
   info 'menubarsplitter'
-  brew install --cask menu-bar-splitter
+  #brew install --cask menu-bar-splitter
 
   info 'rectangle'
-  brew install --cask rectangle
-  link_file "$DIR/rectangle/com.knollsoft.Rectangle.plist" "$HOME/Library/Preferences/com.knollsoft.Rectangle.plist"
+  #brew install --cask rectangle
+  #link_file "$DIR/rectangle/com.knollsoft.Rectangle.plist" "$HOME/Library/Preferences/com.knollsoft.Rectangle.plist"
 
   info 'clipy'
-  brew install --cask clipy
-  #link_file "$DIR/clipy/default.realm" "$HOME/Library/Application Support/com.clipy-app.Clipy/default.realm"
-  link_file "$DIR/clipy/com.clipy-app.Clipy.plist" "$HOME/Library/Preferences/com.clipy-app.Clipy.plist"
+  #brew install --cask clipy
+  ###link_file "$DIR/clipy/default.realm" "$HOME/Library/Application Support/com.clipy-app.Clipy/default.realm"
+  #link_file "$DIR/clipy/com.clipy-app.Clipy.plist" "$HOME/Library/Preferences/com.clipy-app.Clipy.plist"
+  
+  info 'dozer'
+  brew install --cask dozer
 
 }
 
