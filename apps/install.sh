@@ -156,9 +156,6 @@ linker () {
   ###link_file "$DIR/clipy/default.realm" "$HOME/Library/Application Support/com.clipy-app.Clipy/default.realm"
   #link_file "$DIR/clipy/com.clipy-app.Clipy.plist" "$HOME/Library/Preferences/com.clipy-app.Clipy.plist"
   
-  info 'dozer'
-  brew install --cask dozer
-
 }
 
 linker
