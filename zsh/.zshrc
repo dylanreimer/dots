@@ -77,3 +77,4 @@ export PATH="${GOPATH}/bin:$PATH"
 export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
 export PATH="/opt/homebrew/opt/node@12/bin:$PATH"
 export PATH="/opt/homebrew/opt/node@14/bin:$PATH"
+source /Users/dyr/.brazil_completion/zsh_completion
