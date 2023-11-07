@@ -55,7 +55,7 @@ alias speed="/usr/bin/time zsh -i -c exit"
 alias third-party-promote="~/.toolbox/bin/brazil-third-party-tool promote"
 alias third-party="~/.toolbox/bin/brazil-third-party-tool"
 alias auth="kinit -f && mwinit -o"
-
+alias mcurl='curl -L --cookie ~/.midway/cookie --cookie-jar ~/.midway/cookie'
 
 ################ Brazil Related Aliases ##################
 alias bb='brazil-build'
