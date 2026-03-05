@@ -114,7 +114,7 @@ link_file () {
 linker () {
   
   info 'installing starship prompt'
-  curl -sS https://starship.rs/install.sh | sh
+  # curl -sS https://starship.rs/install.sh | sh
 
   info 'linking'
 

@@ -63,18 +63,15 @@ nvm() {
 #     compinit -C
 # fi
 
-export PATH=$HOME/.toolbox/bin:$PATH
-export JAVA_HOME="/Library/Java/JavaVirtualMachines/amazon-corretto-8.jdk/Contents/Home"
-
 autoload bashcompinit && bashcompinit
 autoload -Uz compinit && compinit
-complete -C '/usr/local/bin/aws_completer' aws
 
 alias python=python3
 alias pip=pip3
-export GOPATH="/Users/dylanreimer/go"
-export PATH="${GOPATH}/bin:$PATH"
 export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
 export PATH="/opt/homebrew/opt/node@12/bin:$PATH"
 export PATH="/opt/homebrew/opt/node@14/bin:$PATH"
-source /Users/dyr/.brazil_completion/zsh_completion
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+export PATH="/opt/homebrew/opt/openjdk@11/bin:$PATH"

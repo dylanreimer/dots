@@ -46,31 +46,10 @@ function t {
 }
 alias tt="tree -aFC -I '.git'"
 
-alias ssh151="ssh -t -X eecs151-aap@eda-7.eecs.berkeley.edu 'exec zsh -l' "
-alias ssh161="ssh cs161-asj@hive25.cs.berkeley.edu"
-alias sshwsl="ssh -t dreim@192.168.86.22 'wsl ~' "
 alias chrome='f(){ /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --flag-switches-begin "$@" --flag-switches-end; unset -f f; }; f'
 alias res='omz reload'
 alias speed="/usr/bin/time zsh -i -c exit"
-alias third-party-promote="~/.toolbox/bin/brazil-third-party-tool promote"
-alias third-party="~/.toolbox/bin/brazil-third-party-tool"
-alias auth="kinit -f && mwinit -o"
-alias mcurl='curl -L --cookie ~/.midway/cookie --cookie-jar ~/.midway/cookie'
-
-################ Brazil Related Aliases ##################
-alias bb='brazil-build'
-alias bbr='brazil-recursive-cmd --allPackages brazil-build'
-alias bbc='brazil-build clean'
-
-######### Workspace operations #########
-alias bwv='brazil workspace --use --versionSet'
-alias bws='brazil ws show'
-alias bwp='brazil workspace --use --package'
-alias bwrp='brazil workspace --remove --package'
-alias p='package'
-alias rp='rpackage'
-
-# vpn
-alias vpn='vpn-onetouch'
-alias vpns='/opt/cisco/anyconnect/bin/vpn status'
-alias vpnd='/opt/cisco/anyconnect/bin/vpn disconnect'
+alias y='yt-dlp --cookies-from-browser firefox -f bestaudio -x --audio-format mp3 --add-metadata --embed-thumbnail --audio-quality 0 -o "/Users/dyr/Nextcloud/ableton/sounds (mac)/dls/%(title)s [%(id)s].%(ext)s"'
+alias dj='yt-dlp -f bestaudio -x --audio-format mp3 --add-metadata --embed-thumbnail --audio-quality 0 -o "/Users/dyr/Nextcloud/music/2024/%(channel)s - %(title)s.%(ext)s"'
+alias yt='yt-dlp --format "bestvideo[height<=1080][vcodec^=h264][ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best"'
+alias balatro='cd /Users/dyr/Library/Application\ Support/Steam/steamapps/common/Balatro && sh run_lovely_macos.sh'

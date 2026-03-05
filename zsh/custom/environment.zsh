@@ -18,4 +18,8 @@ source $ZSH_CUSTOM/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source $ZSH_CUSTOM/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
 export PATH="/opt/homebrew/lib/ruby/gems/3.1.0/bin:$PATH"
-export PATH="$PATH:$HOME/.toolbox/bin"
+# export PATH="$PATH:/Users/dyr/Library/Python/3.9/bin"
+export PATH="/opt/homebrew/opt/arm-none-eabi-binutils/bin:$PATH"
+export PATH="/opt/homebrew/opt/avr-gcc@8/bin:$PATH"
+export DYLD_LIBRARY_PATH="/opt/homebrew/opt/ghostscript/lib:$DYLD_LIBRARY_PATH"
+export PATH="/Users/dyr/.local/bin:$PATH"
